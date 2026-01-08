@@ -1,0 +1,66 @@
+# Project information
+site_name: "Degree project handbook"
+site_url: "https://courses.langelion.com/kth-msc-2019/"
+
+# Configuration
+theme:
+  name: material
+  #custom_dir: "mkdocs-material/material"
+  language: en
+  direction: ltr
+  palette:
+    scheme: default
+    primary: indigo
+    accent: pink
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: "assets/images/logo.svg" # Use actual logo path or image file (even for SVG)
+  favicon: "assets/images/favicon.png"
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite # Add if code highlighting is necessary
+  - toc:
+      permalink: true # Generates permalinks for headers
+
+# Page tree
+nav:
+  - Home: index.md
+  - General:
+      - "Course organisation": "content/general/course-organization.md"
+      - "Peer reviewing": "content/general/peer-reviewing.md"
+  - "Project specification":
+      - "Purpose": "content/project-specification/purpose.md"
+      - "Choosing a good problem": "content/project-specification/choosing-scientific-problems.md"
+      - "Required content": "content/project-specification/content.md"
+      - "Background and objective": "content/project-specification/background-objective.md"
+      - "Research question": "content/project-specification/research-question.md"
+      - "Evaluation": "content/project-specification/evaluation.md"
+      - "Prestudy": "content/project-specification/prestudy.md"
+      - "Conditions and schedule": "content/project-specification/schedule.md"
+      - "Assignment": "content/project-specification/assignments.md"
+  - "Pre-study":
+      - "Purpose": "content/prestudy/purpose.md"
+      - "Literature search": "content/prestudy/literature-search.md"
+      - "Literature review": "content/prestudy/literature-review.md"
+      - "Writing": "content/prestudy/writing.md"
+      - "Getting started": "content/prestudy/getting-started.md"
+      - "Assignment": "content/prestudy/assignments.md"
+  - Report:
+      - "Scientific writing": "content/report/scientific-writing.md"
+      - "Process": "content/report/process.md"
+      - "Components": "content/report/report-components.md"
+      - "Introduction": "content/report/introduction.md"
+      - "Background": "content/report/background.md"
+      - "Methodology": "content/report/methodology.md"
+      - "Results": "content/report/results.md"
+      - "Discussion": "content/report/discussion.md"
+      - "Conclusions": "content/report/conclusions.md"
+      - "Checklist": "content/report/tips.md"
+  - Presentation:
+      - "Opposition": "content/tbd.md"
+      - "Presentation": "content/tbd.md" # Adjust accordingly
+  - "Assignments": "content/assignments/all.md"
+  - Templates: "content/resources/templates.md"
